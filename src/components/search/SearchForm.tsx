@@ -18,6 +18,8 @@ export function SearchForm({ onSearch, isLoading, onCategoryChange }: SearchForm
 
   const handleCategorySelect = (cat: MediaCategory) => {
     setCategory(cat);
+    setExamples(['']);
+    setAdventureLevel(3);
     onCategoryChange?.(cat);
   };
 

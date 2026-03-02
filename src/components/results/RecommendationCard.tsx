@@ -43,7 +43,7 @@ export function RecommendationCard({ rec, index, actionVerb }: RecommendationCar
     >
       <div className="flex">
         {/* Poster/Cover Image */}
-        <div className="w-32 sm:w-40 shrink-0">
+        <div className="w-40 sm:w-48 shrink-0">
           {hasImage ? (
             <img
               src={enrichment.imageUrl}
@@ -52,7 +52,7 @@ export function RecommendationCard({ rec, index, actionVerb }: RecommendationCar
               loading="lazy"
             />
           ) : (
-            <div className={`w-full h-full min-h-[200px] flex items-center justify-center
+            <div className={`w-full h-full min-h-[240px] flex items-center justify-center
                             ${rec.isEnriching ? 'animate-shimmer' : 'bg-surface'}`}>
               {!rec.isEnriching && (
                 <span className="text-4xl opacity-30">&#x1F3AC;</span>

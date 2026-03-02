@@ -20,6 +20,7 @@ export function CategorySelector({ selected, onSelect }: CategorySelectorProps) 
           return (
             <button
               key={cat.id}
+              type="button"
               onClick={() => !isDisabled && onSelect(cat.id)}
               disabled={isDisabled}
               className={`
