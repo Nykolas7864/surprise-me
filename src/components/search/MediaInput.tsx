@@ -67,6 +67,7 @@ export function MediaInput({ examples, onChange, category }: MediaInputProps) {
             />
             {examples.length > 1 && (
               <button
+                type="button"
                 onClick={() => removeExample(i)}
                 className="w-8 h-8 flex items-center justify-center rounded-lg
                           text-text-muted hover:text-red-400 hover:bg-red-500/10
@@ -82,6 +83,7 @@ export function MediaInput({ examples, onChange, category }: MediaInputProps) {
 
       {examples.length < 3 && (
         <button
+          type="button"
           onClick={addExample}
           className="mt-2 text-sm text-primary hover:text-primary-hover
                     transition-colors duration-200 cursor-pointer"
